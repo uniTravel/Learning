@@ -3,6 +3,13 @@
 :toc-title: 目录
 :icons: font
 
+ifndef::env-github[]
+include::file-to-include.ext[]
+endif::[]
+ifdef::env-github[]
+contents of include file get added here
+endif::[]
+
 
 // include::Publish.adoc[]
 
