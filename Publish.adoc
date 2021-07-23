@@ -1,0 +1,26 @@
+:toc: left
+:toclevels: 4
+:toc-title: 目录
+:icons: font
+:sectnums:
+:sectnumlevels: 4
+
+
+= 学习笔记
+
+== 数据分析
+
+:leveloffset: +2
+
+include::Analysis/Python.adoc[]
+
+:leveloffset: -2
+
+
+== 求学
+
+:leveloffset: +2
+
+include::Study/Postgraduate.adoc[]
+
+:leveloffset: -2

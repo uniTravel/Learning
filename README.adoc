@@ -1,1 +1,9 @@
-= 学习
+:toc: left
+:toclevels: 4
+:toc-title: 目录
+:icons: font
+
+
+// include::Publish.adoc[]
+
+include::Study/Postgraduate.adoc[]
