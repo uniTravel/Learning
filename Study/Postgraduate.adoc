@@ -27,7 +27,7 @@
 
 ****
 
-==== 备选专业目录
+==== 备选项目
 
 [caption=, frame=topbot, grid=rows, cols="1, 1, 5a", options="footer"]
 |===
@@ -75,7 +75,7 @@
 汇丰商学院:: https://www.phbs.pku.edu.cn/EnrollmentTeaching/admission/postgraduate/
 ****
 
-==== 备选专业目录
+==== 备选项目
 
 [caption=, frame=topbot, grid=rows, cols="1, 1, 5a", options="footer"]
 |===
@@ -110,10 +110,11 @@
 
 == 检查单
 
-[frame=none, grid=none, cols="1a, 4a"]
+[frame=none, grid=none, cols=".^1a, .^4a"]
 |===
 
-|* [ ] 2021年08月05日 |
+|* [ ] 2021年08月05日
+|
 北大光华金融硕士金融专业方向第二批申请**截止到8月5日**。
 
 |* [ ] 2021年08月16日 |

@@ -1,0 +1,4 @@
+# eBook build output
+*.html
+*.pdf
+*.xml
