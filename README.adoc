@@ -100,12 +100,47 @@
 
 === 中国人民大学
 
+.信息源
+****
+[horizontal]
+研招网:: https://pgs.ruc.edu.cn/index.htm
+
+****
+
+==== 备选项目
+
+[caption=, frame=topbot, grid=rows, cols="1, 1, 5a", options="footer"]
+|===
+^|学院 ^|专业名称 ^|备注
+
+3+a|
+* 。
+
+|===
 
 === 复旦大学
 
+.信息源
+****
+[horizontal]
+研招网:: http://www.gsao.fudan.edu.cn/
+管理学院:: https://www.fdsm.fudan.edu.cn/AboutUs/science.html?project=true
+****
 
-=== 上海交通大学
+==== 备选项目
 
+[caption=, frame=topbot, grid=rows, cols="1, 1, 5a", options="footer"]
+|===
+^|学院 ^|专业名称 ^|备注
+
+|管理学院 |领创营 |
+* https://www.fdsm.fudan.edu.cn/mf/mf1556951980776[招生说明]
+* 九月推免视情而定。
+
+3+a|
+* 需要登录了解进一步信息。
+
+|===
 
 
 == 检查单
@@ -113,12 +148,16 @@
 [frame=none, grid=none, cols=".^1a, .^4a"]
 |===
 
-|* [ ] 2021年08月05日
-|
+|* [ ] 2021年08月05日 |
 北大光华金融硕士金融专业方向第二批申请**截止到8月5日**。
+
+|* [ ] 2021年08月09日 |
+北大汇丰直博交流会**截止到8月9日**。
+
+|* [ ] 2021年08月09日 |
+北大汇丰推免交流会**截止到8月9日**。
 
 |* [ ] 2021年08月16日 |
 清华大学预推免报名。
-
 
 |===

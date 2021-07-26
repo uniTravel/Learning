@@ -2,3 +2,5 @@
 *.html
 *.pdf
 *.xml
+.fake
+.ionide
