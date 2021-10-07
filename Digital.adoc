@@ -2,15 +2,14 @@
 :toclevels: 4
 :toc-title: 目录
 :icons: font
-:sectnums:
-:sectnumlevels: 4
 
 
-= 学习笔记
+= 数字化
 
 :leveloffset: +1
 
-include::Digital.adoc[]
-include::Study.adoc[]
+include::Digital/OR.adoc[]
+
+include::Digital/Python.adoc[]
 
 :leveloffset: -1

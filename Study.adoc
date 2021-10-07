@@ -2,15 +2,12 @@
 :toclevels: 4
 :toc-title: 目录
 :icons: font
-:sectnums:
-:sectnumlevels: 4
 
 
-= 学习笔记
+= 求学
 
 :leveloffset: +1
 
-include::Digital.adoc[]
-include::Study.adoc[]
+include::Study/Postgraduate.adoc[]
 
 :leveloffset: -1
