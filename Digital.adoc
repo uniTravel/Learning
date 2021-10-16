@@ -8,8 +8,8 @@
 
 :leveloffset: +1
 
-include::Digital/OR.adoc[]
+include::Digital/OR/OR.adoc[]
 
-include::Digital/Python.adoc[]
+include::Digital/Python/Python.adoc[]
 
 :leveloffset: -1

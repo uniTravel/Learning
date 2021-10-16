@@ -312,17 +312,17 @@ conda create -n sample nb_conda_kernels
 print("Hello World")
 ----
 
-image::python.png[]
+image::Images/python.png[]
 
 点击右上角的运行按钮。
 
-image::hello.png[]
+image::Images/hello.png[]
 
 7、新建 note.ipynb 文件。:: 
 
 选择 sample 作为 Jupyter 内核。
 
-image::jupyter.png[]
+image::Images/jupyter.png[]
 
 8、关闭 VS Code 。:: 
 
@@ -334,3 +334,18 @@ image::jupyter.png[]
 ----
 conda remove -n sample --all
 ----
+
+
+= 典型场景
+
+[source,python]
+----
+include::Snippet/table.py[]
+----
+
+
+= 学习资源
+
+== 数据分析
+
+* https://www.gairuo.com/p/pandas-tutorial[Pandas教程]

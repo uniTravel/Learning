@@ -11,6 +11,5 @@
 :leveloffset: +1
 
 include::Digital.adoc[]
-include::Study.adoc[]
 
 :leveloffset: -1
