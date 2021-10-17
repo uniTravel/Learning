@@ -2,8 +2,6 @@
 :toclevels: 4
 :toc-title: 目录
 :icons: font
-:sectnums:
-:sectnumlevels: 4
 
 
 = 学习笔记

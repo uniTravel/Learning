@@ -1,7 +1,16 @@
 :toc: left
-:toclevels: 4
 :toc-title: 目录
 :icons: font
+:experimental: 
+
+ifndef::toclevels[]
+:toclevels: 2
+endif::[]
+
+ifndef::imagesdir[]
+:imagesdir: Images
+endif::[]
+
 
 = Python
 
@@ -278,9 +287,6 @@ Draw.io Integration:: 绘制流程图。
 配置中的 C:\\Users\\Eric 应改为本机相应的文件夹。
 
 
-== 开启Python之旅
-
-
 === Hello World 例子
 
 1、打开 Anaconda 终端。:: 
@@ -312,17 +318,17 @@ conda create -n sample nb_conda_kernels
 print("Hello World")
 ----
 
-image::Images/python.png[]
+image::python.png[]
 
 点击右上角的运行按钮。
 
-image::Images/hello.png[]
+image::hello.png[]
 
 7、新建 note.ipynb 文件。:: 
 
 选择 sample 作为 Jupyter 内核。
 
-image::Images/jupyter.png[]
+image::jupyter.png[]
 
 8、关闭 VS Code 。:: 
 
@@ -336,16 +342,52 @@ conda remove -n sample --all
 ----
 
 
-= 典型场景
+== 学习资源
 
-[source,python]
+
+=== 数据分析
+
+* https://www.gairuo.com/p/pandas-tutorial[Pandas教程]
+
+
+
+== 典型场景
+
+
+=== 爬取 table 表单数据
+
+[source, python]
 ----
 include::Snippet/table.py[]
 ----
 
+[NOTE]
+可先检查目标数据是否 table 表单：
+先打开目标网页；
+然后用 kbd:[F12] 打开开发人员工具，检查表单是否 table 类型。
 
-= 学习资源
 
-== 数据分析
+== Q&A
 
-* https://www.gairuo.com/p/pandas-tutorial[Pandas教程]
+
+=== 环境配置
+
+
+==== Matplotlib 中文图例乱码
+
+1、用 VS Code 打开 matplotlibrc 文件。::
+
+位于 anaconda3\Lib\site-packages\matplotlib\mpl-data 文件夹。
+
+2、修改 Font 相关配置。:: 
+
+修改成下图所示。
+
+image::matplotlibrc.png[]
+
+[NOTE]
+====
+* 增加中文字体 Microsoft Yahei。
+* 启用 sans-serif 字体族。
+====
+

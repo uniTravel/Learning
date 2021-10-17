@@ -8,8 +8,10 @@
 
 :leveloffset: +1
 
+:imagesdir: Digital/OR/Imeges
 include::Digital/OR/OR.adoc[]
 
+:imagesdir: Digital/Python/Images
 include::Digital/Python/Python.adoc[]
 
 :leveloffset: -1
