@@ -11,5 +11,4 @@ table = elem.xpath('//table')
 table = etree.tostring(table[0]).decode()
 df = pd.read_html(table, encoding='utf-8', header=0)[0]
 df = df.loc[~(df['学校'] == '学校')]
-# df = df.loc[df['学校'].str.contains('北京|上海|浙江|福建')]
 df

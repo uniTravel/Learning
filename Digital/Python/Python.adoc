@@ -4,7 +4,7 @@
 :experimental: 
 
 ifndef::toclevels[]
-:toclevels: 2
+:toclevels: 3
 endif::[]
 
 ifndef::imagesdir[]
@@ -31,7 +31,6 @@ VS Code:: 微软的 Visual Studio Code ，一款优秀的文本编辑器。结�
 * 相关软件通过 winget 工具安装，需要 Windows 10 版本 1809 (10.0.17763) 或更高版本的 Windows 10、Windows 11。
 * https://docs.microsoft.com/zh-cn/windows/package-manager/winget/[winget概述及指令说明]。
 ====
-
 
 === 安装 Windows Terminal
 
@@ -72,7 +71,6 @@ winget install --id Microsoft.WindowsTerminal -e
 * 后续操作都从 Windows Terminal 进入。
 ====
 
-
 === 安装 PowerShell
 
 1、打开 Windows Terminal 。:: 
@@ -104,7 +102,6 @@ winget install --id Microsoft.PowerShell -e
 [TIP]
 PowerShell 功能强于 Windows PowerShell ，建议配置 PowerShell 作为默认配置文件。
 
-
 === 安装 Anaconda
 
 1、打开 Windows Terminal 。:: 
@@ -132,7 +129,6 @@ winget install --name Anaconda3
 
 [CAUTION]
 由于搜索 Anaconda3 返回结果只有一个，安装时可用以上的简化方式。
-
 
 === 配置 Anaconda 终端
 
@@ -167,7 +163,6 @@ Python 3.8.8
 
 [TIP]
 Anaconda 有图形化操作界面，不过终端指令更加简捷、高效，所有 Anaconda 操作都建议用终端执行。
-
 
 === 配置 Anaconda 使用清华源
 
@@ -225,7 +220,6 @@ conda update --all
 * 更新完成后可检查新的 Anaconda 及 Python 版本。
 * 不同的 Python 项目宜分别创建专用的 Anaconda 环境，以解决对特定 Python 包的依赖问题。
 ====
-
 
 === 安装、配置 VS Code
 
@@ -286,7 +280,6 @@ Draw.io Integration:: 绘制流程图。
 [CAUTION]
 配置中的 C:\\Users\\Eric 应改为本机相应的文件夹。
 
-
 === Hello World 例子
 
 1、打开 Anaconda 终端。:: 
@@ -344,7 +337,6 @@ conda remove -n sample --all
 
 == 学习资源
 
-
 === 数据分析
 
 * https://www.gairuo.com/p/pandas-tutorial[Pandas教程]
@@ -353,8 +345,9 @@ conda remove -n sample --all
 
 == 典型场景
 
+=== 信息收集
 
-=== 爬取 table 表单数据
+==== table 表单数据
 
 [source, python]
 ----
@@ -366,12 +359,46 @@ include::Snippet/table.py[]
 先打开目标网页；
 然后用 kbd:[F12] 打开开发人员工具，检查表单是否 table 类型。
 
+==== 文章转存成文件
+
+[source, python]
+----
+include::Snippet/article.py[]
+
+# 转存单篇文章的例子
+url = 'http://www.qingxin.gov.cn/zfxxgk/zfgzbg/content/post_1344062.html'
+path = '//div[@class="article-content"]//p'
+folder = get_folder('QingXin')
+to_file(folder + "工作报告.txt", url, path)
+
+# 转存一批文章的例子
+url = "http://www.qingxin.gov.cn/zfxxgk/zfgzbg/"
+titles = article_attribute(url, '//div[@class="channel_list"]/ul/li/a/@title')
+urls = article_attribute(url, '//div[@class="channel_list"]/ul/li/a/@href')
+path = '//div[@class="article-content"]//p'
+folder = get_folder('QingXin')
+for title, url in zip(titles, urls):
+    name = folder + title + '.txt'
+    to_file(name, url, path)
+----
+
+[NOTE]
+====
+* 函数定义主要考虑两种场景：一是各段落用特定标记包装；二是各段落在同一个标记内，通过换行符换行。
+* 提取内容主要利用 lxml 包的 xpath 函数，参考 link:https://www.w3cschool.cn/lxml/[lxml 中文文档]。
+* 分页文章可将 to_file 函数的 mode 属性设为 'a' ，以添加的模式写入文档。
+====
+
+
+=== 数据分析
+
+
+=== 文本分析
+
 
 == Q&A
 
-
 === 环境配置
-
 
 ==== Matplotlib 中文图例乱码
 
